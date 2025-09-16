@@ -2,6 +2,7 @@
 import { Suspense } from 'react';
 import LikeButton from './LikeButton';
 import Quote from './Quote';
+import FeedbackForm from './FeedbackForm';
 
 export default function App() {
   return (
@@ -13,6 +14,8 @@ export default function App() {
       <Suspense fallback={<p>Loading quote...</p>}>
         <Quote />
       </Suspense>
+      <hr />
+      <FeedbackForm />
     </div>
   );
 }
